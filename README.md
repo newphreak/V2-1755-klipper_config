@@ -5,6 +5,10 @@ Kaptein Kabelsatan's config.
 Credits to [eecue](https://github.com/eecue/klippper-config) where most comes from, and [Jasrags](https://github.com/Jasrags/V2-1031-klipper_config) for another big chunk. Just don't let them look at it, they will certainly cry.
 
 
+
+
+
+
 KLIPPER CONFIG BACKUP SCRIPT HOWTO
 - `ssh-keygen`
 - `cat ~/.ssh/id_rsa.pub`
@@ -21,12 +25,12 @@ Go to (4) Advanced and install the shell command extension (9) (Select yes for e
 - Put this in printer.cfg or wherever you have macros:
 
 ```
-[gcode_shell_command backup_cfg]<br/>
-command: sh /home/pi/klipper_config/autocommit.sh<br/>
-timeout: 30.0<br/>
-verbose: True<br/>
-[gcode_macro BACKUP_CFG]<br/>
-gcode:<br/>
+[gcode_shell_command backup_cfg]
+command: sh /home/pi/klipper_config/autocommit.sh
+timeout: 30.0
+verbose: True
+[gcode_macro BACKUP_CFG]
+gcode:
 RUN_SHELL_COMMAND CMD=backup_cfg
 ```
 
