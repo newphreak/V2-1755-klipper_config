@@ -54,4 +54,5 @@ _**Note: only changes of signifigance will be added.**_
 * [alch3my's frame expansion script](https://github.com/Klipper3d/klipper/pull/4157)
 * [eecue's klipper configs](https://github.com/eecue/klippper-config)
 * [zellneralex's klipper_configs](https://github.com/zellneralex/klipper_config)
-* [th33xitus/kiauh github klipper backup](https://github.com/th33xitus/kiauh/wiki/How-to-autocommit-config-changes-to-github%3F)
+* [FHeilmann's klipper_configs](https://github.com/FHeilmann/klipper_config/)
+* [th33xitus/kiauh klipper github backup](https://github.com/th33xitus/kiauh/wiki/How-to-autocommit-config-changes-to-github%3F)
