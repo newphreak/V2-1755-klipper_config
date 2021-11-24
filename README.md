@@ -59,6 +59,7 @@ _**Note: only changes of signifigance will be added.**_
 
 # Credits in no particular order
 
+* [VoronDesign](https://github.com/VoronDesign)
 * [alch3my's frame expansion script](https://github.com/Klipper3d/klipper/pull/4157)
 * [eecue's klipper_config](https://github.com/eecue/klippper-config)
 * [zellneralex's klipper_config](https://github.com/zellneralex/klipper_config)
