@@ -1,0 +1,66 @@
+[server]
+host = 0.0.0.0
+port = 7125
+enable_debug_logging = false
+
+[data_store]
+temperature_store_size = 600
+gcode_store_size = 1000
+
+[file_manager]
+config_path = ~/klipper_config
+log_path = ~/klipper_logs
+
+[authorization]
+cors_domains = 
+	https://my.mainsail.xyz
+	http://my.mainsail.xyz
+	http://*.local
+	http://*.lan
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+enable_auto_refresh = True
+enable_repo_debug = True
+
+[power shelly1]
+type = shelly
+locked_while_printing = True
+restart_klipper_when_powered = True
+address = 192.168.1.12
+output_id = 0
+off_when_shutdown = True
+
+[update_manager voron-klipper-common]
+type = git_repo
+path = /home/pi/Voron-Klipper-Common
+primary_branch = main
+origin = https://github.com/The-Conglomerate/Voron-Klipper-Common.git
+install_script = /home/pi/Voron-Klipper-Common/install.sh
+is_system_service = False
+
+[update_manager client frame_expansion]
+type = git_repo
+path = /home/pi/klipper_frame_expansion_comp
+primary_branch = main
+origin = https://github.com/alchemyEngine/klipper_frame_expansion_comp.git
+install_script = install.sh
+is_system_service = False
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
