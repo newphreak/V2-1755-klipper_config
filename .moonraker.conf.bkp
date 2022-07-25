@@ -10,6 +10,7 @@ gcode_store_size = 1000
 [file_manager]
 config_path = ~/klipper_config
 log_path = ~/klipper_logs
+enable_object_processing = True
 
 [authorization]
 cors_domains = 
