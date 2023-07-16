@@ -1,5 +1,5 @@
 printer-*_*.cfg
 *.*.bkp
 .moonraker.conf.bkp
-/adxl_results/*
+adxl_results/
 *.*.backup
