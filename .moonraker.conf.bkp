@@ -1,15 +1,14 @@
 [server]
 host = 0.0.0.0
 port = 7125
-enable_debug_logging = false
+max_upload_size = 1024
+klippy_uds_address = ~/printer_data/comms/klippy.sock
 
 [data_store]
 temperature_store_size = 600
 gcode_store_size = 1000
 
 [file_manager]
-config_path = ~/klipper_config
-log_path = ~/klipper_logs
 enable_object_processing = True
 
 [authorization]
@@ -33,7 +32,6 @@ trusted_clients =
 
 [update_manager]
 enable_auto_refresh = True
-enable_repo_debug = True
 
 [power shelly1pmpro]
 type = shelly
@@ -56,4 +54,11 @@ type = web
 channel = stable
 repo = mainsail-crew/mainsail
 path = ~/mainsail
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
 
